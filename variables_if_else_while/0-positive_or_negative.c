@@ -1,4 +1,4 @@
-#include<studio>
+#include<stdio>
 
 /**
  * main - positive negativa
