@@ -1,4 +1,4 @@
-#include<stdio>
+#include <stdio.h>
 
 /**
  * main - positive negativa
@@ -16,7 +16,7 @@ int main(void)
 	{
 		printf("%d is positive\n", n);
 	}
-	else
+	else if (n==0)
 	{
 		printf("%d is zero\n", n);
 	else
