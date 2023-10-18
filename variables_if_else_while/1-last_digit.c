@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
+
 /**
  * main - one
  * Description: task1
@@ -10,20 +12,27 @@
 int main(void)
 {
 	int n;
+	int lastDigit;
+	char myString[50];
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	if (n > 5)
+
+	lastDigit = n % 10;
+
+	strcpy(myString, "Last digit of");
+
+	if (lastDigit > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n);
+		printf("%s %d is %d and is greater than 5\n", myString, n, lastDigit);
 	}
-	else if (n == 0)
+	else if (lastDigit == 0)
 	{
-		printf("Last digit of %d is %d and is 0\n", n);
+		printf("%s %d is %d and is 0\n", myString, n, lastDigit);
 	}
-	else
+	if (lastDigit < 6 && lastDigit != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n");
+		printf("%s %d is %d and is less than 6 and not 0\n", myString, n, lastDigit);
 	}
 	return (0);
 }
