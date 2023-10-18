@@ -8,14 +8,22 @@
 
 int main(void)
 {
-	char letter = 'a';
+	char lowercase = 'a';
+	char uppercase = 'A';
 
-	while (letter <= 'z')
+	printf("Lowercase alphabet: ");
+	while (lowercase <= 'z')
 	{
-		putchar(letter);
-		letter++;
+		putchar(lowercase);
+		lowercase++;
 	}
 
+	printf("\nUppercase alphabet: ");
+	while (uppercase <= 'Z')
+	{
+	putchar(uppercase);
+	uppercase++;
+	}
 	putchar('\n');
 
 	return (0);
