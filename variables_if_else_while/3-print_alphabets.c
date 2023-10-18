@@ -8,21 +8,20 @@
 
 int main(void)
 {
-	char lowercase = 'a';
-	char uppercase = 'A';
+	char letter = 'a';
 
-	printf("Lowercase alphabet: ");
-	while (lowercase <= 'z')
+	while (letter <= 'z')
 	{
-		putchar(lowercase);
-		lowercase++;
+		putchar(letter);
+		letter++;
 	}
 
-	printf("\nUppercase alphabet: ");
-	while (uppercase <= 'Z')
+	letter = 'A'
+
+	while (letter <= 'Z')
 	{
-	putchar(uppercase);
-	uppercase++;
+		putchar(letter);
+		letter++;
 	}
 	putchar('\n');
 
