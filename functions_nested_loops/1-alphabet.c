@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main - tasks
- * Return: Always 0 (success)
+ * print_alphabet - void
+ * Description: task lowercase
  */
 
-void main(void)
+void print_alphabet(void)
 {
 	char letter;
 
