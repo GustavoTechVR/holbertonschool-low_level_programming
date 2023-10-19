@@ -2,20 +2,20 @@
 
 /**
  * print_alphabet_x10 - void
- * Description: task x10
+ * Description: prints 10 times alphabet in lowercase
  */
 
 void print_alphabet_x10(void)
 {
+	int i;
 	char x;
-
-	for (x = 0; x < 10; x++)
+	
+	for (i = 0; i <= 9; i++)
 	{
 		for (x = 'a'; x <= 'z'; x++)
 		{
 			_putchar(x);
 		}
-
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
