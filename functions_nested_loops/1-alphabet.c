@@ -2,12 +2,10 @@
 
 /**
  * main - tasks
- * Description: task
- * Return: 0
+ * Return: Always 0 (success)
  */
 
 void print_alphabet(void)
-
 {
 	char letter;
 
