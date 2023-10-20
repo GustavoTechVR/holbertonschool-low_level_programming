@@ -19,32 +19,32 @@ void print_to_98(int n)
 			{
 				if (n < 0) 
 				{
-				putchar('-');
-				putchar(i / 10 * -1 + '0');
-				putchar(i % 10 * -1 + '0');
+				_putchar('-');
+				_putchar(i / 10 * -1 + '0');
+				_putchar(i % 10 * -1 + '0');
 				}
 			else
 				{
-				putchar(i / 10 + '0');
-				putchar(i % 10 + '0');
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
 				}
-			putchar(',');
-			putchar(' ');
+			_putchar(',');
+			_putchar(' ');
 			}
 		else	
 			{
 			if (n < 0)
 				{
-				putchar('-');
-				putchar(i / 10 * -1 + '0');
-				putchar(i % 10 * -1 + '0');
+				_putchar('-');
+				_putchar(i / 10 * -1 + '0');
+				_putchar(i % 10 * -1 + '0');
 				}
 			else
 				{
-				putchar(i / 10 + '0');
-				putchar(i % 10 + '0');
+				_putchar(i / 10 + '0');
+				_putchar(i % 10 + '0');
 				}
-			putchar('\n');
+			_putchar('\n');
 			}
         		}
 		}
@@ -56,31 +56,31 @@ void print_to_98(int n)
 				{
 				if (n < 0)
 					{
-					putchar('-');
-					putchar(i / 10 * -1 + '0');
-					putchar(i % 10 * -1 + '0');
+					_putchar('-');
+					_putchar(i / 10 * -1 + '0');
+					_putchar(i % 10 * -1 + '0');
 					}
 				else 
 					{
-					putchar(i / 10 + '0');
-					putchar(i % 10 + '0');
+					_putchar(i / 10 + '0');
+					_putchar(i % 10 + '0');
 					}
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 				}
 			else
 				{
 				if (n < 0) {
-					putchar('-');
-					putchar(i / 10 * -1 + '0');
-					putchar(i % 10 * -1 + '0');
+					_putchar('-');
+					_putchar(i / 10 * -1 + '0');
+					_putchar(i % 10 * -1 + '0');
 				}
 				else
 				{
-					putchar(i / 10 + '0');
-					putchar(i % 10 + '0');
+					_putchar(i / 10 + '0');
+					_putchar(i % 10 + '0');
 				}
-				putchar('\n');
+				_putchar('\n');
 				}
 			}
 		}
