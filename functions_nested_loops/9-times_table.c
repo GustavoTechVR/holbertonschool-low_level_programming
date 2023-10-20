@@ -7,8 +7,6 @@
  * Return: 0
  */
 
-void _putchar(char c);
-
 void print_number(int n)
 	{
 	if (n =< 9)
