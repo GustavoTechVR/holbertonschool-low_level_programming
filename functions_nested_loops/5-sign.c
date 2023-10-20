@@ -2,7 +2,7 @@
 
 /**
  * print_sign - int n
- * @c: the character checked
+ * @n: the character checked
  * Description: function that prints the sign of a number
  * Return: 1 if n is greater than zero, 0 if n is zero, -1 otherwise
  */
