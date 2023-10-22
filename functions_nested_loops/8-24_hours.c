@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * print_digit - int
- * 
+ * print_digit - void
+ * jack_bauer - void
  * Description: prints every minute of the day of Jack Bauer
- * Return: print_digit
+ * Return: void
  */
 
 void print_digit(int digit)
