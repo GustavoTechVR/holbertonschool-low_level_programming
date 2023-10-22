@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * jack_bauer - void
- * @print_digit: to be checked
+ * print_digit - int
+ * 
  * Description: prints every minute of the day of Jack Bauer
  * Return: print_digit
  */
