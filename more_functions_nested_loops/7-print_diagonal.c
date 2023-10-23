@@ -9,7 +9,6 @@ void print_diagonal(int n)
 	else
 		{
 		int espacios = 0;
-		int diagonales = 0;
 
 		while (espacios < n)
 			{
@@ -21,12 +20,6 @@ void print_diagonal(int n)
 			_putchar('\\');
 			_putchar('\n');
 			espacios++;
-			diagonales++;
-			}
-		if (n > 1)
-			{
-			_putchar('\n');
 			}
 		}
-		
 	}
