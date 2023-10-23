@@ -13,6 +13,7 @@ void print_diagonal(int n)
 		while (espacios < n)
 			{
 			int i;
+
 			for (i = 0; i < espacios; i++)
 				{
 				_putchar(' ');
