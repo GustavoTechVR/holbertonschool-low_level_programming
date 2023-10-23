@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * print_digit - void
- * Description: print
  * jack_bauer - void
+ * @digit: checked
  * Description: prints every minute of the day of Jack Bauer
- * Return: void
+ * Return: 0
  */
 
 void print_digit(int digit)
