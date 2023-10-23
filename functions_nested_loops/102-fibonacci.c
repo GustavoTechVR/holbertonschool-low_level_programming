@@ -1,23 +1,29 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * print_most_numbers - void
- * @num: checked
- * print_most_numbers - Imprime los números del 0 al 9 excluyendo 2 y 4
- * return: 0
+ * main - Imprime los primeros 50 números de la secuencia de Fibonacci
+ *
+ * Return: 0
  */
-
-void print_most_numbers(void)
+int main(void)
 {
-	int num;
+	long a = 1, b = 2, next, i;
 
-	for (num = 0; num <= 9; num++)
+	printf("%ld, %ld, ", a, b);
+
+	for (i = 2; i < 50; i++)
 	{
-	if (num != 2 && num != 4)
-		{
-		_putchar(num + '0');
-		}
+		next = a + b;
+		printf("%ld", next);
+
+		if (i != 49)
+		printf(", ");
+
+		a = b;
+		b = next;
 	}
 
-	_putchar('\n');
+	printf("\n");
+
+	return (0);
 }
