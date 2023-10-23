@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_diagonal - int
+ * @n: the character checked
+ * Description: draws a diagonal line on the terminal
+ * Return: 0
+ */
+
 void print_diagonal(int n)
 	{
 	if (n <= 0)
