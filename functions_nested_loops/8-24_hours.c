@@ -2,6 +2,7 @@
 
 /**
  * print_digit - void
+ * Description: print
  * jack_bauer - void
  * Description: prints every minute of the day of Jack Bauer
  * Return: void
