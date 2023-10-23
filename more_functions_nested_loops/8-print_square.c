@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+ * print_square - int
+ * @size: checked
+ * Description: prints a square
+ * Return: 0
+ */
+
 void print_square(int size)
 {
 	if (size <= 0)
