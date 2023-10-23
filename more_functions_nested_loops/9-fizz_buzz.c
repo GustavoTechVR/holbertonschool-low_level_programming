@@ -2,7 +2,7 @@
 
 /**
  * main - void
- * @i: the character checked
+ *
  * Description: Fizz-Buzz test
  * Return: 0
  */
