@@ -2,7 +2,7 @@
 
 /**
  * print_triangle - int
- *
+ * @size: checked
  * Description: prints a triangle
  * Return: 0
  */
