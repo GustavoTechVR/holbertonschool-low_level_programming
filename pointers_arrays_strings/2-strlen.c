@@ -2,7 +2,7 @@
 
 /**
  * _strlen - int
- * @c: the character checked
+ * @s: the character checked
  * Description: returns the length of a string
  * Return: 0
  */
