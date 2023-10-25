@@ -9,11 +9,11 @@ int main(void)
 	char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 	int password_length = 10;
 
+	int i;
+
 	srand(time(NULL));
 
 	printf("Contraseña generada: ");
-
-	int i;
 
 	for (i = 0; i < password_length; i++)
 	{
