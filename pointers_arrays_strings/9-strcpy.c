@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * _stracpy - char
- * @i: the character checked
+ * *_stracpy - char
+ * @dest: the character checked
+ * @src: checked
  * Description: Write a function that copies the string pointed
  * Return: 0
  */
