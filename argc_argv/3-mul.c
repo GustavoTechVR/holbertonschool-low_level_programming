@@ -1,12 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * main - int
  * @argc: checked
  * @argv: checked
  * Return: 0
- */
-
-#include <stdio.h>
-#include <stdlib.h>
+ */
 
 int main(int argc, char *argv[])
 {
@@ -15,9 +15,10 @@ int main(int argc, char *argv[])
 		int num1 = atoi(argv[1]);
 		int num2 = atoi(argv[2]);
 		int resultado = num1 * num2;
+
 		printf("%d\n", resultado);
 		}
-	else 
+	else
 	{
 		printf("Error\n");
 		return (1);
