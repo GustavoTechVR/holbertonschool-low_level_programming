@@ -4,7 +4,7 @@
  * main - int
  * @argc: checked
  * @argv: checked
- * Description: Write a program that prints the number of arguments passed into it
+ * Description: Write a program prints the number of arguments passed into it
  * Return: 0
  */
 
