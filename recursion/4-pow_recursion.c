@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _islower - int
+ * _pow_recursion - int
  * @x: the character checked
  * @y: checked
  * Description: function returns the value of x raised to the power of y
