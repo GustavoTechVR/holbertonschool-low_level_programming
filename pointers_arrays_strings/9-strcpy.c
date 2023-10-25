@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * *_stracpy - char
+ * _stracpy - char
  * @dest: the character checked
  * @src: checked
  * Description: Write a function that copies the string pointed
  * Return: 0
  */
 
-char *_strcpy(char *dest, char *src)
+char _strcpy(char *dest, char *src)
 {
 	int i = 0;
 
