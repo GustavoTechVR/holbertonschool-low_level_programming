@@ -23,6 +23,7 @@ int main(int argc, char *argv[])
 	{
 		char *arg = argv[i];
 		int j = 0;
+		int num = 0;
 
 		while (arg[j])
 		{
@@ -31,9 +32,10 @@ int main(int argc, char *argv[])
 				printf("Error\n");
 				return (1);
 			}
-			suma = suma * 10 + (arg[j] - '0');
+			num = num * 10 + (arg[j] - '0');
 			j++;
 		}
+		suma += num;
 	}
 
 	printf("%d\n", suma);
