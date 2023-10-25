@@ -13,7 +13,9 @@ int main(void)
 
 	printf("Contraseña generada: ");
 
-	for (int i = 0; i < password_length; i++)
+	int i;
+
+	for (i = 0; i < password_length; i++)
 	{
 		int index = rand() % PASSWORD_LENGTH;
 
