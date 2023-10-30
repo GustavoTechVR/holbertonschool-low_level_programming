@@ -11,48 +11,22 @@
 
 int is_prime_number(int n)
 {
-	int divisor = 5;
-	int incremento = 2;
-
+	int i;
+	
 	if (n <= 1)
-	{
 		return (0);
-	}
-
-	if (n == 2 || n == 3)
-	{
+	if (n <= 3)
 		return (1);
-	}
-
 	if (n % 2 == 0 || n % 3 == 0)
-	{
 		return (0);
-	}
 
-	int divisor = 5;
-	int incremento = 2;
+	if (n % 6 != 1 && n % 6 != 5)
+		return 0;
 
-	if (divisor * divisor > n)
+	for (i = 5; i * i <= n; i += 6)
 	{
-		return (1);
-	}
-
-	if (n % divisor == 0)
-	{
-		return (0);
-	}
-
-	divisor += incremento;
-	incremento = 6 - incremento;
-
-	if (divisor * divisor > n)
-	{
-		return (1);
-	}
-
-	if (n % divisor == 0)
-	{
-	return (0);
+		if (n % i == 0 || n % (i + 2) == 0)
+			return (0);
 	}
 
 	return (1);
