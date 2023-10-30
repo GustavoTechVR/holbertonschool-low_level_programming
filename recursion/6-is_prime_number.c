@@ -9,14 +9,17 @@
 
 #include "main.h"
 
-int is_prime_number(int n);
+int is_prime_number(int n)
 {
+	int divisor = 5;
+	int incremento = 2;
+	
 	if (n <= 1)
 	{
 		return (0);
 	}
 
-	if (n <= 3)
+	if (n == 2 || n == 3)
 	{
 		return (1);
 	}
@@ -26,15 +29,16 @@ int is_prime_number(int n);
 		return (0);
 	}
 
-	int i = 5;
-	while (i * i <= n)
-	{
-	if (n % i == 0 || n % (i + 2) == 0)
-	{
-		return (0);
-	}
-	i += 6;
-	}
+	while (divisor * divisor <= n)
+		{
+		if (n % divisor == 0)
+	       	{
+			return (0);
+		}
 
-    return (1);
+		divisor += incremento;
+		incremento = 6 - incremento;
+		}
+
+	return (1);
 }
