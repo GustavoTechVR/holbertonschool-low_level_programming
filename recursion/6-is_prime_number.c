@@ -13,7 +13,7 @@ int is_prime_number(int n)
 {
 	int divisor = 5;
 	int incremento = 2;
-	
+
 	if (n <= 1)
 	{
 		return (0);
@@ -29,16 +29,31 @@ int is_prime_number(int n)
 		return (0);
 	}
 
-	while (divisor * divisor <= n)
-		{
-		if (n % divisor == 0)
-	       	{
-			return (0);
-		}
+	int divisor = 5;
+	int incremento = 2;
 
-		divisor += incremento;
-		incremento = 6 - incremento;
-		}
+	if (divisor * divisor > n)
+	{
+		return (1);
+	}
+
+	if (n % divisor == 0)
+	{
+		return (0);
+	}
+
+	divisor += incremento;
+	incremento = 6 - incremento;
+
+	if (divisor * divisor > n)
+	{
+		return (1);
+	}
+
+	if (n % divisor == 0)
+	{
+	return (0);
+	}
 
 	return (1);
 }
