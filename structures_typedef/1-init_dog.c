@@ -1,12 +1,13 @@
 #include "dog.h"
 #include <stddef.h>
+#include <stdio.h>
 
 /**
- * init_dog - int
+ * init_dog - struct
  * @d: pointer
  * @name: name
  * @age: age
- * @owner: dueño
+ * @owner: dueno
  * Return: 0
  */
 
