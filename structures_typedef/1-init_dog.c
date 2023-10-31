@@ -13,8 +13,6 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog my_dog;
-	
 	if (d != NULL)
 	{
 		d->name = name;
