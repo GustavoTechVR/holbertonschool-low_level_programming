@@ -1,4 +1,4 @@
-#include <stddef.h> // Necesario para el tipo de datos size_t
+#include <stddef.h>
 
 /**
  * array_iterator - int
