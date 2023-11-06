@@ -1,3 +1,10 @@
+/**
+ * main - includes argc and argv
+ * @argc: counte the elements of argv
+ * @argv: element to input
+ * Return: 98,99,100
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
@@ -5,33 +12,31 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2, result;
-	char *operator;
-	int (*calc_func)(int, int);
+	int (*operation)(int, int);
 
 	if (argc != 4)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	operator = argv[2];
-	calc_func = get_op_func(operator);
+	operation = get_op_func(argv[2]);
 
-	if (calc_func == NULL)
+	if (operation == NULL)
 	{
 		printf("Error\n");
-		exit(99);
+		return (99);
 	}
 
-	if ((*operator == '/' || *operator == '%') && num2 == 0)
+	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
 	{
 		printf("Error\n");
-		exit(100);
+		return (100);
 	}
 
-	result = calc_func(num1, num2);
+	result = operation(num1, num2);
 	printf("%d\n", result);
 
 	return (0);

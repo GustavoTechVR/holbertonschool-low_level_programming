@@ -1,17 +1,18 @@
-#include "3-calc.h"
-#include <stddef.h>
-
 /**
- * get_op_func - char int
- * @s: the character checked
- * Description: Write a program that performs simple operations.
- * Return: 0
+ * get_op_func - to set the operators
+ * @s: string?
+ * Return: NULL
  */
+
+#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int (*get_op_func(char *s))(int, int)
 {
-	op_t ops[] =
-	{
+	int i;
+
+	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
@@ -19,13 +20,15 @@ int (*get_op_func(char *s))(int, int)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	int i = 0;
 
-	while (ops[i].op)
+	i = 0;
+	while (ops[i].op != NULL)
 	{
 		if (*(ops[i].op) == *s && s[1] == '\0')
 			return (ops[i].f);
 		i++;
 	}
+	printf("Error\n");
+	exit(99);
 	return (NULL);
 }
